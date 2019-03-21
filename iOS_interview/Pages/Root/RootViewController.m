@@ -9,6 +9,7 @@
 static NSString *const cellId = @"k_rootCellId";
 
 #import "RootViewController.h"
+//#import "DemoInfoCell.h"
 
 @interface RootViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -51,35 +52,45 @@ static NSString *const cellId = @"k_rootCellId";
 }
 
 - (void)initData {
-    [self.dataSource addObject:@{
-                                 @"title": NSLocalizedString(@"RunLoop", nil),
-                                 @"subTitle": NSLocalizedString(@"RunLoopDesc", nil),
-                                 @"className": @"TimerInRunLoopViewController"
-                                 }];
     
-    [self.dataSource addObject:@{
-                                 @"title": NSLocalizedString(@"LowestCommonAncestorView", nil),
-                                 @"subTitle": NSLocalizedString(@"LowestCommonAncestorViewDesc", nil),
-                                 @"className": @"LowestCommonAncestorViewController"
-                                 }];
-    
-    [self.dataSource addObject:@{
-                                 @"title": NSLocalizedString(@"ObjectCopy", nil),
-                                 @"subTitle": NSLocalizedString(@"ObjectCopyDesc", nil),
-                                 @"className": @"CustomObjectCopyViewController"
-                                 }];
-    
-    [self.dataSource addObject:@{
-                                 @"title": NSLocalizedString(@"DynamicBinding", nil),
-                                 @"subTitle": NSLocalizedString(@"DynamicBindingDesc", nil),
-                                 @"className": @"DynamicBindingDemoViewController"
-                                 }];
-    
-    [self.dataSource addObject:@{
-                                 @"title": NSLocalizedString(@"Category", nil),
-                                 @"subTitle": NSLocalizedString(@"CategoryDesc", nil),
-                                 @"className": @"CategoryViewController"
-                                 }];
+    NSArray *tmp = @[
+                     @{
+                         @"title": NSLocalizedString(@"RunLoop", nil),
+                         @"subTitle": NSLocalizedString(@"RunLoopDesc", nil),
+                         @"className": @"TimerInRunLoopViewController"
+                         },
+                     @{
+                         @"title": NSLocalizedString(@"LowestCommonAncestorView", nil),
+                         @"subTitle": NSLocalizedString(@"LowestCommonAncestorViewDesc", nil),
+                         @"className": @"LowestCommonAncestorViewController"
+                         },
+                     @{
+                         @"title": NSLocalizedString(@"ObjectCopy", nil),
+                         @"subTitle": NSLocalizedString(@"ObjectCopyDesc", nil),
+                         @"className": @"CustomObjectCopyViewController"
+                         },
+                     @{
+                         @"title": NSLocalizedString(@"DynamicBinding", nil),
+                         @"subTitle": NSLocalizedString(@"DynamicBindingDesc", nil),
+                         @"className": @"DynamicBindingDemoViewController"
+                         },
+                     @{
+                         @"title": NSLocalizedString(@"Category", nil),
+                         @"subTitle": NSLocalizedString(@"CategoryDesc", nil),
+                         @"className": @"CategoryViewController"
+                         },
+                     @{
+                         @"title": NSLocalizedString(@"PaintingBoard", nil),
+                         @"subTitle": NSLocalizedString(@"PaintingBoardDesc", nil),
+                         @"className": @"PaintingBoardViewController",
+                         },
+                     @{
+                         @"title": NSLocalizedString(@"ShapeLayerBoard", nil),
+                         @"subTitle": NSLocalizedString(@"ShapeLayerBoardDesc", nil),
+                         @"className": @"ShapeLayerBorderViewController",
+                         },
+                     ];
+    [self.dataSource addObjectsFromArray:tmp];
     
     [self.tableView reloadData];
 }
@@ -104,6 +115,7 @@ static NSString *const cellId = @"k_rootCellId";
     NSDictionary *dict = [self.dataSource objectAtIndex:indexPath.row];
     cell.textLabel.text = [dict objectForKey:@"title"];
     cell.detailTextLabel.text = [dict objectForKey:@"subTitle"];
+    [cell setNeedsUpdateConstraints];
     return cell;
 }
 
@@ -133,6 +145,7 @@ static NSString *const cellId = @"k_rootCellId";
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.tableFooterView = [[UIView alloc] init];
         _tableView.rowHeight = UITableViewAutomaticDimension;
+        _tableView.estimatedRowHeight = 44.f;
         
         _tableView.delegate = self;
         _tableView.dataSource = self;

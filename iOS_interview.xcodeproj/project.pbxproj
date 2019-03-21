@@ -21,6 +21,11 @@
 		AA78A5A8223F6D920002588E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA78A5A6223F6D920002588E /* LaunchScreen.storyboard */; };
 		AA78A5AB223F6D920002588E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA78A5AA223F6D920002588E /* main.m */; };
 		AA78A5B4223F6E2E0002588E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA78A5B3223F6E2E0002588E /* BaseViewController.m */; };
+		AA8E31552243BA5700D95B3F /* ShapeLayerBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8E31542243BA5700D95B3F /* ShapeLayerBorderView.m */; };
+		AA8E31592243BAB600D95B3F /* ShapeLayerBorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8E31582243BAB600D95B3F /* ShapeLayerBorderViewController.m */; };
+		AAABF242224382360032856C /* PaintingBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAABF241224382360032856C /* PaintingBoardViewController.m */; };
+		AAABF245224383490032856C /* PaintingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAABF244224383490032856C /* PaintingBoardView.m */; };
+		AAABF24822438A050032856C /* DemoInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAABF24722438A050032856C /* DemoInfoCell.m */; };
 		AAEB3D192240785100887AA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAEB3D1B2240785100887AA7 /* InfoPlist.strings */; };
 		AAEB3D1F224079F600887AA7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAEB3D21224079F600887AA7 /* Localizable.strings */; };
 		AAEB3D26224082DC00887AA7 /* CustomObjectCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEB3D25224082DC00887AA7 /* CustomObjectCopyViewController.m */; };
@@ -59,6 +64,16 @@
 		AA78A5AA223F6D920002588E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA78A5B2223F6E2E0002588E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		AA78A5B3223F6E2E0002588E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		AA8E31532243BA5700D95B3F /* ShapeLayerBorderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeLayerBorderView.h; sourceTree = "<group>"; };
+		AA8E31542243BA5700D95B3F /* ShapeLayerBorderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerBorderView.m; sourceTree = "<group>"; };
+		AA8E31572243BAB600D95B3F /* ShapeLayerBorderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeLayerBorderViewController.h; sourceTree = "<group>"; };
+		AA8E31582243BAB600D95B3F /* ShapeLayerBorderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerBorderViewController.m; sourceTree = "<group>"; };
+		AAABF240224382360032856C /* PaintingBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintingBoardViewController.h; sourceTree = "<group>"; };
+		AAABF241224382360032856C /* PaintingBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintingBoardViewController.m; sourceTree = "<group>"; };
+		AAABF243224383490032856C /* PaintingBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintingBoardView.h; sourceTree = "<group>"; };
+		AAABF244224383490032856C /* PaintingBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintingBoardView.m; sourceTree = "<group>"; };
+		AAABF24622438A050032856C /* DemoInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoInfoCell.h; sourceTree = "<group>"; };
+		AAABF24722438A050032856C /* DemoInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoInfoCell.m; sourceTree = "<group>"; };
 		AAEB3D14224077B700887AA7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		AAEB3D15224077B700887AA7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		AAEB3D1A2240785100887AA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -109,6 +124,7 @@
 		AA206458223F7ADF00E79C52 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				AAABF23F2243821E0032856C /* PaintingBoard */,
 				AA6AB40C22425FC300C22D8C /* Category */,
 				AA6AB405224114E900C22D8C /* DynamicBinding */,
 				AAEB3D23224082AA00887AA7 /* CustomObjectCopy */,
@@ -124,6 +140,8 @@
 			children = (
 				AA20645A223F7AF700E79C52 /* RootViewController.h */,
 				AA20645B223F7AF700E79C52 /* RootViewController.m */,
+				AAABF24622438A050032856C /* DemoInfoCell.h */,
+				AAABF24722438A050032856C /* DemoInfoCell.m */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -224,6 +242,29 @@
 				AA78A5B3223F6E2E0002588E /* BaseViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		AA8E31562243BA8C00D95B3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAABF243224383490032856C /* PaintingBoardView.h */,
+				AAABF244224383490032856C /* PaintingBoardView.m */,
+				AA8E31532243BA5700D95B3F /* ShapeLayerBorderView.h */,
+				AA8E31542243BA5700D95B3F /* ShapeLayerBorderView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAABF23F2243821E0032856C /* PaintingBoard */ = {
+			isa = PBXGroup;
+			children = (
+				AA8E31562243BA8C00D95B3F /* Views */,
+				AAABF240224382360032856C /* PaintingBoardViewController.h */,
+				AAABF241224382360032856C /* PaintingBoardViewController.m */,
+				AA8E31572243BAB600D95B3F /* ShapeLayerBorderViewController.h */,
+				AA8E31582243BAB600D95B3F /* ShapeLayerBorderViewController.m */,
+			);
+			path = PaintingBoard;
 			sourceTree = "<group>";
 		};
 		AAEB3D16224077E400887AA7 /* LocalizationsFile */ = {
@@ -368,15 +409,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA78A5A0223F6D910002588E /* ViewController.m in Sources */,
+				AA8E31592243BAB600D95B3F /* ShapeLayerBorderViewController.m in Sources */,
 				AA6AB412224260AD00C22D8C /* Student+Category.m in Sources */,
 				AA78A5B4223F6E2E0002588E /* BaseViewController.m in Sources */,
 				AAEBE162223F9F8D00FDDDBB /* LowestCommonAncestorViewController.m in Sources */,
+				AA8E31552243BA5700D95B3F /* ShapeLayerBorderView.m in Sources */,
 				AA6AB40B2241165A00C22D8C /* DBDemoCell.m in Sources */,
 				AA6AB40F22425FD700C22D8C /* CategoryViewController.m in Sources */,
 				AA6AB4082241151200C22D8C /* DynamicBindingDemoViewController.m in Sources */,
 				AA78A5AB223F6D920002588E /* main.m in Sources */,
 				AA78A59D223F6D910002588E /* AppDelegate.m in Sources */,
+				AAABF242224382360032856C /* PaintingBoardViewController.m in Sources */,
 				AA20645C223F7AF700E79C52 /* RootViewController.m in Sources */,
+				AAABF24822438A050032856C /* DemoInfoCell.m in Sources */,
+				AAABF245224383490032856C /* PaintingBoardView.m in Sources */,
 				AAEB3D26224082DC00887AA7 /* CustomObjectCopyViewController.m in Sources */,
 				AAEBE15E223F85CF00FDDDBB /* TimerInRunLoopViewController.m in Sources */,
 				AA6AB416224262B600C22D8C /* UILabel+Category.m in Sources */,
@@ -546,9 +592,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L48948APW5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iOS_interview/PrefixHeader.pch;
 				INFOPLIST_FILE = iOS_interview/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -565,9 +613,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L48948APW5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iOS_interview/PrefixHeader.pch;
 				INFOPLIST_FILE = iOS_interview/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

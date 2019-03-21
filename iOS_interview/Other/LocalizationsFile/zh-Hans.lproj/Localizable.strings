@@ -22,8 +22,11 @@
 "Category" = "Category & Extension";
 "CategoryDesc" = "分类Category，以及通过runtime给Category添加属性。";
 
-"PaintBoard" = "绘画板";
-"CategoryDesc" = "绘画板Demo";
+"PaintingBoard" = "绘画板";
+"PaintingBoardDesc" = "绘画板Demo。此实现有性能问题，画得越多，程序就会越慢。因为每次移动手指的时候都会重绘整个贝塞尔路径（UIBezierPath），随着路径越来越复杂，每次重绘的工作就会增加，直接导致了帧数的下降。";
+
+"ShapeLayerBoard" = "绘画板（二）";
+"ShapeLayerBoardDesc" = "另一个绘画板Demo。用CAShapeLayer替代Core Graphics，性能就会得到提高。虽然随着路径复杂性的增加，绘制性能依然会下降，但是只有当非常非常复杂的绘制时才会感到明显的帧率差异";
 
 "AudioPlayer" = "音频播放";
 "AudioPlaterDesc" = "音频播放Demo";

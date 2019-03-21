@@ -22,8 +22,11 @@
 "Category" = "Category & Extension";
 "CategoryDesc" = "Category & Extension";
 
-"PaintingBoard" = "Painting board";
+"PaintingBoard" = "Painting Board";
 "PaintingBoardDesc" = "A painting Board demo";
+
+"ShapeLayerBoard" = "Painting Board Optimize";
+"ShapeLayerBoardDesc" = "Painting Board Optimize";
 
 "AudioPlayer" = "Audio Player";
 "AudioPlaterDesc" = "An audio player demo";
