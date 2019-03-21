@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  iOS_interview
+
+  Created by Ethan Guo on 2019/3/19.
+  Copyright © 2019 ethan. All rights reserved.
+*/
+
+// RootViewController
+"RunLoop" = "RunLoop";
+"RunLoopDesc" = "Set a timer in main thread run loop.";
+
+"LowestCommonAncestorView" = "Lowest Common Ancestor View";
+"LowestCommonAncestorViewDesc" = "Like Lowest Common Ancestor Problem.";
+
+"ObjectCopy" = "Custom Object Copy";
+"ObjectCopyDesc" = "Custom Object Copy";
+
+"DynamicBinding" = "Dynamic Binding Demo";
+"DynamicBindingDesc" = "Dynamic Binding Demo";
+
+"Category" = "Category & Extension";
+"CategoryDesc" = "Category & Extension";
+
+"PaintingBoard" = "Painting board";
+"PaintingBoardDesc" = "A painting Board demo";
+
+"AudioPlayer" = "Audio Player";
+"AudioPlaterDesc" = "An audio player demo";
+
+"VideoPlayer" = "Video Player";
+"VideoPlayerDesc" = "A video player demo";

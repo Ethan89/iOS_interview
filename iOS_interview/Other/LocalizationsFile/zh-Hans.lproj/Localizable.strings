@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  iOS_interview
+
+  Created by Ethan Guo on 2019/3/19.
+  Copyright © 2019 ethan. All rights reserved.
+*/
+
+// RootViewController
+"RunLoop" = "RunLoop";
+"RunLoopDesc" = "在主线程RunLoop中加入一个定时器，观察TableView滑动时定时器的运行情况。";
+
+"LowestCommonAncestorView" = "寻找最近公共View";
+"LowestCommonAncestorViewDesc" = "类似数据结构里面的找最近公共祖先的问题。";
+
+"ObjectCopy" = "自定义对象拷贝";
+"ObjectCopyDesc" = "自定义对象拷贝，主要是实现了NSCopying和NSMutableCopying协议";
+
+"DynamicBinding" = "动态绑定Demo";
+"DynamicBindingDesc" = "一个简单的动态绑定Demo。TableViewCell中的deleteButton一开始并没有绑定响应事件，而是在cell重用的时候添加响应事件，并通过RunTime在运行时动态绑定了当前cell的indexPath。";
+
+"Category" = "Category & Extension";
+"CategoryDesc" = "分类Category，以及通过runtime给Category添加属性。";
+
+"PaintBoard" = "绘画板";
+"CategoryDesc" = "绘画板Demo";
+
+"AudioPlayer" = "音频播放";
+"AudioPlaterDesc" = "音频播放Demo";
+
+"VideoPlayer" = "视频播放";
+"VideoPlayerDesc" = "视频播放Demo";
