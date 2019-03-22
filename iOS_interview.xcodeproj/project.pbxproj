@@ -14,6 +14,9 @@
 		AA6AB40F22425FD700C22D8C /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6AB40E22425FD700C22D8C /* CategoryViewController.m */; };
 		AA6AB412224260AD00C22D8C /* Student+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6AB411224260AD00C22D8C /* Student+Category.m */; };
 		AA6AB416224262B600C22D8C /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6AB415224262B600C22D8C /* UILabel+Category.m */; };
+		AA7247CB2244714F00E6B6C5 /* UnknowBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7247CA2244714F00E6B6C5 /* UnknowBoardView.m */; };
+		AA7247CE2244B84300E6B6C5 /* DirtyRectangleBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7247CD2244B84300E6B6C5 /* DirtyRectangleBoardView.m */; };
+		AA7247D12244BDA200E6B6C5 /* DirtyRectangleOptimizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7247D02244BDA200E6B6C5 /* DirtyRectangleOptimizeView.m */; };
 		AA78A59D223F6D910002588E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA78A59C223F6D910002588E /* AppDelegate.m */; };
 		AA78A5A0223F6D910002588E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA78A59F223F6D910002588E /* ViewController.m */; };
 		AA78A5A3223F6D910002588E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA78A5A1223F6D910002588E /* Main.storyboard */; };
@@ -21,8 +24,7 @@
 		AA78A5A8223F6D920002588E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA78A5A6223F6D920002588E /* LaunchScreen.storyboard */; };
 		AA78A5AB223F6D920002588E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA78A5AA223F6D920002588E /* main.m */; };
 		AA78A5B4223F6E2E0002588E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA78A5B3223F6E2E0002588E /* BaseViewController.m */; };
-		AA8E31552243BA5700D95B3F /* ShapeLayerBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8E31542243BA5700D95B3F /* ShapeLayerBorderView.m */; };
-		AA8E31592243BAB600D95B3F /* ShapeLayerBorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8E31582243BAB600D95B3F /* ShapeLayerBorderViewController.m */; };
+		AA8E31552243BA5700D95B3F /* ShapeLayerBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8E31542243BA5700D95B3F /* ShapeLayerBoardView.m */; };
 		AAABF242224382360032856C /* PaintingBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAABF241224382360032856C /* PaintingBoardViewController.m */; };
 		AAABF245224383490032856C /* PaintingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAABF244224383490032856C /* PaintingBoardView.m */; };
 		AAABF24822438A050032856C /* DemoInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAABF24722438A050032856C /* DemoInfoCell.m */; };
@@ -52,6 +54,12 @@
 		AA6AB414224262B600C22D8C /* UILabel+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
 		AA6AB415224262B600C22D8C /* UILabel+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
 		AA6AB4172242665800C22D8C /* Student+AllName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+AllName.h"; sourceTree = "<group>"; };
+		AA7247C92244714F00E6B6C5 /* UnknowBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnknowBoardView.h; sourceTree = "<group>"; };
+		AA7247CA2244714F00E6B6C5 /* UnknowBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnknowBoardView.m; sourceTree = "<group>"; };
+		AA7247CC2244B84300E6B6C5 /* DirtyRectangleBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirtyRectangleBoardView.h; sourceTree = "<group>"; };
+		AA7247CD2244B84300E6B6C5 /* DirtyRectangleBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirtyRectangleBoardView.m; sourceTree = "<group>"; };
+		AA7247CF2244BDA200E6B6C5 /* DirtyRectangleOptimizeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirtyRectangleOptimizeView.h; sourceTree = "<group>"; };
+		AA7247D02244BDA200E6B6C5 /* DirtyRectangleOptimizeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirtyRectangleOptimizeView.m; sourceTree = "<group>"; };
 		AA78A598223F6D900002588E /* iOS_interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_interview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA78A59B223F6D910002588E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AA78A59C223F6D910002588E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,10 +72,8 @@
 		AA78A5AA223F6D920002588E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA78A5B2223F6E2E0002588E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		AA78A5B3223F6E2E0002588E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		AA8E31532243BA5700D95B3F /* ShapeLayerBorderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeLayerBorderView.h; sourceTree = "<group>"; };
-		AA8E31542243BA5700D95B3F /* ShapeLayerBorderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerBorderView.m; sourceTree = "<group>"; };
-		AA8E31572243BAB600D95B3F /* ShapeLayerBorderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeLayerBorderViewController.h; sourceTree = "<group>"; };
-		AA8E31582243BAB600D95B3F /* ShapeLayerBorderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerBorderViewController.m; sourceTree = "<group>"; };
+		AA8E31532243BA5700D95B3F /* ShapeLayerBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeLayerBoardView.h; sourceTree = "<group>"; };
+		AA8E31542243BA5700D95B3F /* ShapeLayerBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerBoardView.m; sourceTree = "<group>"; };
 		AAABF240224382360032856C /* PaintingBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintingBoardViewController.h; sourceTree = "<group>"; };
 		AAABF241224382360032856C /* PaintingBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintingBoardViewController.m; sourceTree = "<group>"; };
 		AAABF243224383490032856C /* PaintingBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintingBoardView.h; sourceTree = "<group>"; };
@@ -249,8 +255,14 @@
 			children = (
 				AAABF243224383490032856C /* PaintingBoardView.h */,
 				AAABF244224383490032856C /* PaintingBoardView.m */,
-				AA8E31532243BA5700D95B3F /* ShapeLayerBorderView.h */,
-				AA8E31542243BA5700D95B3F /* ShapeLayerBorderView.m */,
+				AA8E31532243BA5700D95B3F /* ShapeLayerBoardView.h */,
+				AA8E31542243BA5700D95B3F /* ShapeLayerBoardView.m */,
+				AA7247C92244714F00E6B6C5 /* UnknowBoardView.h */,
+				AA7247CA2244714F00E6B6C5 /* UnknowBoardView.m */,
+				AA7247CC2244B84300E6B6C5 /* DirtyRectangleBoardView.h */,
+				AA7247CD2244B84300E6B6C5 /* DirtyRectangleBoardView.m */,
+				AA7247CF2244BDA200E6B6C5 /* DirtyRectangleOptimizeView.h */,
+				AA7247D02244BDA200E6B6C5 /* DirtyRectangleOptimizeView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,8 +273,6 @@
 				AA8E31562243BA8C00D95B3F /* Views */,
 				AAABF240224382360032856C /* PaintingBoardViewController.h */,
 				AAABF241224382360032856C /* PaintingBoardViewController.m */,
-				AA8E31572243BAB600D95B3F /* ShapeLayerBorderViewController.h */,
-				AA8E31582243BAB600D95B3F /* ShapeLayerBorderViewController.m */,
 			);
 			path = PaintingBoard;
 			sourceTree = "<group>";
@@ -409,11 +419,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA78A5A0223F6D910002588E /* ViewController.m in Sources */,
-				AA8E31592243BAB600D95B3F /* ShapeLayerBorderViewController.m in Sources */,
 				AA6AB412224260AD00C22D8C /* Student+Category.m in Sources */,
 				AA78A5B4223F6E2E0002588E /* BaseViewController.m in Sources */,
 				AAEBE162223F9F8D00FDDDBB /* LowestCommonAncestorViewController.m in Sources */,
-				AA8E31552243BA5700D95B3F /* ShapeLayerBorderView.m in Sources */,
+				AA7247D12244BDA200E6B6C5 /* DirtyRectangleOptimizeView.m in Sources */,
+				AA7247CE2244B84300E6B6C5 /* DirtyRectangleBoardView.m in Sources */,
+				AA8E31552243BA5700D95B3F /* ShapeLayerBoardView.m in Sources */,
 				AA6AB40B2241165A00C22D8C /* DBDemoCell.m in Sources */,
 				AA6AB40F22425FD700C22D8C /* CategoryViewController.m in Sources */,
 				AA6AB4082241151200C22D8C /* DynamicBindingDemoViewController.m in Sources */,
@@ -425,6 +436,7 @@
 				AAABF245224383490032856C /* PaintingBoardView.m in Sources */,
 				AAEB3D26224082DC00887AA7 /* CustomObjectCopyViewController.m in Sources */,
 				AAEBE15E223F85CF00FDDDBB /* TimerInRunLoopViewController.m in Sources */,
+				AA7247CB2244714F00E6B6C5 /* UnknowBoardView.m in Sources */,
 				AA6AB416224262B600C22D8C /* UILabel+Category.m in Sources */,
 				AAEB3D29224082F900887AA7 /* Student.m in Sources */,
 			);

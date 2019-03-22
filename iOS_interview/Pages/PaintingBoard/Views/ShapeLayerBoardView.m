@@ -1,20 +1,20 @@
 //
-//  ShapeLayerBorderView.m
+//  ShapeLayerBoardView.m
 //  iOS_interview
 //
 //  Created by Ethan Guo on 2019/3/21.
 //  Copyright © 2019 ethan. All rights reserved.
 //
 
-#import "ShapeLayerBorderView.h"
+#import "ShapeLayerBoardView.h"
 
-@interface ShapeLayerBorderView ()
+@interface ShapeLayerBoardView ()
 
 @property (nonatomic, strong) UIBezierPath *path;
 
 @end
 
-@implementation ShapeLayerBorderView
+@implementation ShapeLayerBoardView
 
 + (Class)layerClass {
     //this makes our view create a CAShapeLayer

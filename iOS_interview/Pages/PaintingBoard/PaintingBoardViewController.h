@@ -8,9 +8,20 @@
 
 #import "BaseViewController.h"
 
+typedef NS_ENUM(NSInteger, PaintingBoardType) {
+    // enum like: MyEnumTypeA = 0,
+    PaintingBoardTypeUnknow = 0,
+    PaintingBoardTypeBezierPath,
+    PaintingBoardTypeShapeLayer,
+    PaintingBoardTypeDirtyRectangle,
+    PaintingBoardTypeDirtyRectangleOptimize
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PaintingBoardViewController : BaseViewController
+
+@property (nonatomic, assign) PaintingBoardType type;
 
 @end
 

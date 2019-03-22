@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
                          textColor:(UIColor *)color
                          textAlign:(NSTextAlignment)align;
 
++ (UILabel *)generateLabelWithFont:(UIFont *)font
+                         textColor:(UIColor *)color
+                         textAlign:(NSTextAlignment)align;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,11 +8,15 @@
 //
 
 #import "PaintingBoardViewController.h"
+#import "UnknowBoardView.h"
 #import "PaintingBoardView.h"
+#import "ShapeLayerBoardView.h"
+#import "DirtyRectangleBoardView.h"
+#import "DirtyRectangleOptimizeView.h"
 
 @interface PaintingBoardViewController ()
 
-@property (nonatomic, strong) PaintingBoardView *paintingBoardView;
+@property (nonatomic, strong) UIView *paintingBoardView;
 
 @end
 
@@ -37,6 +41,24 @@
 - (void)setupSubUI {
     [super setupSubUI];
     
+    switch (self.type) {
+        case PaintingBoardTypeBezierPath:
+            self.paintingBoardView = [[PaintingBoardView alloc] init];
+            break;
+        case PaintingBoardTypeShapeLayer:
+            self.paintingBoardView = [[ShapeLayerBoardView alloc] init];
+            break;
+        case PaintingBoardTypeDirtyRectangle:
+            self.paintingBoardView = [[DirtyRectangleBoardView alloc] init];
+            break;
+        case PaintingBoardTypeDirtyRectangleOptimize:
+            self.paintingBoardView = [[DirtyRectangleOptimizeView alloc] init];
+            break;
+        default:
+            self.paintingBoardView = [[UnknowBoardView alloc] init];
+            break;
+    }
+    
     [self.containerView addSubview:self.paintingBoardView];
 }
 
@@ -49,10 +71,4 @@
 }
 
 #pragma mark - Getters
-- (PaintingBoardView *)paintingBoardView {
-    if (!_paintingBoardView) {
-        _paintingBoardView = [[PaintingBoardView alloc] init];
-    }
-    return _paintingBoardView;
-}
 @end

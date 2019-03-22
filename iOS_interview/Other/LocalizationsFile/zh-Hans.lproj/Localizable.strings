@@ -28,8 +28,17 @@
 "ShapeLayerBoard" = "绘画板（二）";
 "ShapeLayerBoardDesc" = "另一个绘画板Demo。用CAShapeLayer替代Core Graphics，性能就会得到提高。虽然随着路径复杂性的增加，绘制性能依然会下降，但是只有当非常非常复杂的绘制时才会感到明显的帧率差异";
 
+"DirtyRectangle" = "脏矩形";
+"DirtyRectangleDesc" = "有时候用CAShapeLayer或者其他矢量图形图层替代Core Graphics并不是那么切实可行。比如我们的绘图应用：我们用线条完美地完成了矢量绘制。但是设想一下如果我们能进一步提高应用的性能，让它就像一个黑板一样工作，然后用『粉笔』来绘制线条。模拟粉笔最简单的方法就是用一个『线刷』图片然后将它粘贴到用户手指碰触的地方，但是这个方法用CAShapeLayer没办法实现。";
+
+"DirtyRectangleOptimize" = "脏矩形优化";
+"DirtyRectangleOptimizeDesc" = "当一个视图被改动过了，它可能需要重绘。但是很多情况下，只是这个视图的一部分被改变了，所以重绘整个寄宿图就太浪费了。但是Core Animation通常并不了解你的自定义绘图代码，它也不能自己计算出脏区域的位置。然而，调用-setNeedsDisplayInRect:来标记脏区域位置。将影响到的矩形作为参数传入。这样就会在一次视图刷新时调用视图的-drawRect:方法。";
+
 "AudioPlayer" = "音频播放";
 "AudioPlaterDesc" = "音频播放Demo";
 
 "VideoPlayer" = "视频播放";
 "VideoPlayerDesc" = "视频播放Demo";
+
+// PaintingBoardViewController
+"InvalidPaintingBoardType" = "无效的PaintingBoardType类型";

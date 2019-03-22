@@ -28,8 +28,18 @@
 "ShapeLayerBoard" = "Painting Board Optimize";
 "ShapeLayerBoardDesc" = "Painting Board Optimize";
 
+"DirtyRectangle" = "Dirty Rectangle";
+"DirtyRectangleDesc" = "Dirty Rectangle Demo";
+
+"DirtyRectangleOptimize" = "Dirty Rectangle Optimize";
+"DirtyRectangleOptimizeDesc" = "DirtyRectangleOptimize";
+
+
 "AudioPlayer" = "Audio Player";
 "AudioPlaterDesc" = "An audio player demo";
 
 "VideoPlayer" = "Video Player";
 "VideoPlayerDesc" = "A video player demo";
+
+// PaintingBoardViewController
+"InvalidPaintingBoardType" = "Invalid Painting Board Type";

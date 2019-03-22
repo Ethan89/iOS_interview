@@ -1,8 +1,8 @@
 //
-//  ShapeLayerBorderView.h
+//  DirtyRectangleBoardView.h
 //  iOS_interview
 //
-//  Created by Ethan Guo on 2019/3/21.
+//  Created by Ethan Guo on 2019/3/22.
 //  Copyright © 2019 ethan. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ShapeLayerBorderView : UIView
+@interface DirtyRectangleBoardView : UIView
 
 @end
 

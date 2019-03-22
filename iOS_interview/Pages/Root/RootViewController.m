@@ -9,7 +9,7 @@
 static NSString *const cellId = @"k_rootCellId";
 
 #import "RootViewController.h"
-//#import "DemoInfoCell.h"
+#import "PaintingBoardViewController.h"
 
 @interface RootViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -83,12 +83,26 @@ static NSString *const cellId = @"k_rootCellId";
                          @"title": NSLocalizedString(@"PaintingBoard", nil),
                          @"subTitle": NSLocalizedString(@"PaintingBoardDesc", nil),
                          @"className": @"PaintingBoardViewController",
+                         @"type": [NSNumber numberWithInteger:1]
                          },
                      @{
                          @"title": NSLocalizedString(@"ShapeLayerBoard", nil),
                          @"subTitle": NSLocalizedString(@"ShapeLayerBoardDesc", nil),
-                         @"className": @"ShapeLayerBorderViewController",
+                         @"className": @"PaintingBoardViewController",
+                         @"type": [NSNumber numberWithInteger:2]
                          },
+                     @{
+                         @"title": NSLocalizedString(@"DirtyRectangle", nil),
+                         @"subTitle": NSLocalizedString(@"DirtyRectangleDesc", nil),
+                         @"className": @"PaintingBoardViewController",
+                         @"type": [NSNumber numberWithInteger:3]
+                         },
+                     @{
+                         @"title": NSLocalizedString(@"DirtyRectangleOptimize", nil),
+                         @"subTitle": NSLocalizedString(@"DirtyRectangleOptimizeDesc", nil),
+                         @"className": @"PaintingBoardViewController",
+                         @"type": [NSNumber numberWithInteger:4]
+                         }
                      ];
     [self.dataSource addObjectsFromArray:tmp];
     
@@ -126,7 +140,7 @@ static NSString *const cellId = @"k_rootCellId";
     NSDictionary *dict = [self.dataSource objectAtIndex:indexPath.row];
     NSString *classNameStr = [dict objectForKey:@"className"];
     
-    if (classNameStr.length == 0) {
+    if (classNameStr == nil || classNameStr.length == 0) {
         return;
     }
     
@@ -135,6 +149,13 @@ static NSString *const cellId = @"k_rootCellId";
     
     if ([next isKindOfClass:[UIViewController class]]) {
         ((UIViewController *)next).title = dict[@"title"];
+        
+        if ([next isKindOfClass:[PaintingBoardViewController class]] && dict[@"type"] != nil) {
+            NSNumber *typeObj = dict[@"type"];
+            PaintingBoardViewController *tmp = (PaintingBoardViewController *)next;
+            tmp.type = [typeObj integerValue];
+        }
+        
         [self.navigationController pushViewController:next animated:YES];
     }
 }

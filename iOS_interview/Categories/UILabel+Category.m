@@ -38,4 +38,12 @@
     return new;
 }
 
++ (UILabel *)generateLabelWithFont:(UIFont *)font
+                         textColor:(UIColor *)color
+                         textAlign:(NSTextAlignment)align {
+    UILabel *new = [[UILabel alloc] generateLabelWithFont:font
+                                                textColor:color
+                                                textAlign:align];
+    return new;
+}
 @end
