@@ -80,6 +80,7 @@
 		AAABF244224383490032856C /* PaintingBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintingBoardView.m; sourceTree = "<group>"; };
 		AAABF24622438A050032856C /* DemoInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoInfoCell.h; sourceTree = "<group>"; };
 		AAABF24722438A050032856C /* DemoInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoInfoCell.m; sourceTree = "<group>"; };
+		AAD1B4FB224862A600380C99 /* CustomMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomMacro.h; sourceTree = "<group>"; };
 		AAEB3D14224077B700887AA7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		AAEB3D15224077B700887AA7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		AAEB3D1A2240785100887AA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -166,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				AA20645E223F7EF600E79C52 /* ColorMacro.h */,
+				AAD1B4FB224862A600380C99 /* CustomMacro.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";

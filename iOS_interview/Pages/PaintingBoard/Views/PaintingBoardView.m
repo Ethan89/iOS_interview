@@ -48,6 +48,9 @@
 
 #pragma mark - Responding to Touch Events
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    kPrintCurrentThread;
+    
     // 获取起始位置
     CGPoint point = [[touches anyObject] locationInView:self];
     
@@ -56,6 +59,9 @@
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    kPrintCurrentThread;
+    
     // 获取当前位置
     CGPoint point = [[touches anyObject] locationInView:self];
     

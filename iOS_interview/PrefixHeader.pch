@@ -16,6 +16,7 @@
 
 #import "ColorMacro.h"
 #import "ColorDefine.h"
+#import "CustomMacro.h"
 
 #import "UILabel+Category.h"
 

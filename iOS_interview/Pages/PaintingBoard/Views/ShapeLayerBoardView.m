@@ -54,8 +54,10 @@
     shapeLayer.lineWidth = 5;
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    kPrintCurrentThread;
+    
     //get the starting point
     CGPoint point = [[touches anyObject] locationInView:self];
     
@@ -63,8 +65,10 @@
     [self.path moveToPoint:point];
 }
 
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    kPrintCurrentThread;
+    
     //get the current point
     CGPoint point = [[touches anyObject] locationInView:self];
     
