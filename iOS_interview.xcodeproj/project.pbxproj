@@ -25,6 +25,8 @@
 		AA78A5AB223F6D920002588E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA78A5AA223F6D920002588E /* main.m */; };
 		AA78A5B4223F6E2E0002588E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA78A5B3223F6E2E0002588E /* BaseViewController.m */; };
 		AA8E31552243BA5700D95B3F /* ShapeLayerBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8E31542243BA5700D95B3F /* ShapeLayerBoardView.m */; };
+		AAA79F5E224F404600EFCA10 /* GCDDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA79F5D224F404600EFCA10 /* GCDDemoViewController.m */; };
+		AAA79F64224F4D4B00EFCA10 /* GCDDemoViewController+TestFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA79F63224F4D4B00EFCA10 /* GCDDemoViewController+TestFunc.m */; };
 		AAABF242224382360032856C /* PaintingBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAABF241224382360032856C /* PaintingBoardViewController.m */; };
 		AAABF245224383490032856C /* PaintingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAABF244224383490032856C /* PaintingBoardView.m */; };
 		AAABF24822438A050032856C /* DemoInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAABF24722438A050032856C /* DemoInfoCell.m */; };
@@ -74,6 +76,10 @@
 		AA78A5B3223F6E2E0002588E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		AA8E31532243BA5700D95B3F /* ShapeLayerBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeLayerBoardView.h; sourceTree = "<group>"; };
 		AA8E31542243BA5700D95B3F /* ShapeLayerBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerBoardView.m; sourceTree = "<group>"; };
+		AAA79F5C224F404600EFCA10 /* GCDDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDemoViewController.h; sourceTree = "<group>"; };
+		AAA79F5D224F404600EFCA10 /* GCDDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDemoViewController.m; sourceTree = "<group>"; };
+		AAA79F62224F4D4B00EFCA10 /* GCDDemoViewController+TestFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GCDDemoViewController+TestFunc.h"; sourceTree = "<group>"; };
+		AAA79F63224F4D4B00EFCA10 /* GCDDemoViewController+TestFunc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GCDDemoViewController+TestFunc.m"; sourceTree = "<group>"; };
 		AAABF240224382360032856C /* PaintingBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintingBoardViewController.h; sourceTree = "<group>"; };
 		AAABF241224382360032856C /* PaintingBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintingBoardViewController.m; sourceTree = "<group>"; };
 		AAABF243224383490032856C /* PaintingBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintingBoardView.h; sourceTree = "<group>"; };
@@ -131,6 +137,8 @@
 		AA206458223F7ADF00E79C52 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				AAA79F5B224F401500EFCA10 /* GCDDemo */,
+				AAB5F6E7224896300019C325 /* ImagePicker */,
 				AAABF23F2243821E0032856C /* PaintingBoard */,
 				AA6AB40C22425FC300C22D8C /* Category */,
 				AA6AB405224114E900C22D8C /* DynamicBinding */,
@@ -269,6 +277,17 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		AAA79F5B224F401500EFCA10 /* GCDDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AAA79F5C224F404600EFCA10 /* GCDDemoViewController.h */,
+				AAA79F5D224F404600EFCA10 /* GCDDemoViewController.m */,
+				AAA79F62224F4D4B00EFCA10 /* GCDDemoViewController+TestFunc.h */,
+				AAA79F63224F4D4B00EFCA10 /* GCDDemoViewController+TestFunc.m */,
+			);
+			path = GCDDemo;
+			sourceTree = "<group>";
+		};
 		AAABF23F2243821E0032856C /* PaintingBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +296,13 @@
 				AAABF241224382360032856C /* PaintingBoardViewController.m */,
 			);
 			path = PaintingBoard;
+			sourceTree = "<group>";
+		};
+		AAB5F6E7224896300019C325 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 		AAEB3D16224077E400887AA7 /* LocalizationsFile */ = {
@@ -423,6 +449,7 @@
 				AA78A5A0223F6D910002588E /* ViewController.m in Sources */,
 				AA6AB412224260AD00C22D8C /* Student+Category.m in Sources */,
 				AA78A5B4223F6E2E0002588E /* BaseViewController.m in Sources */,
+				AAA79F64224F4D4B00EFCA10 /* GCDDemoViewController+TestFunc.m in Sources */,
 				AAEBE162223F9F8D00FDDDBB /* LowestCommonAncestorViewController.m in Sources */,
 				AA7247D12244BDA200E6B6C5 /* DirtyRectangleOptimizeView.m in Sources */,
 				AA7247CE2244B84300E6B6C5 /* DirtyRectangleBoardView.m in Sources */,
@@ -438,6 +465,7 @@
 				AAABF245224383490032856C /* PaintingBoardView.m in Sources */,
 				AAEB3D26224082DC00887AA7 /* CustomObjectCopyViewController.m in Sources */,
 				AAEBE15E223F85CF00FDDDBB /* TimerInRunLoopViewController.m in Sources */,
+				AAA79F5E224F404600EFCA10 /* GCDDemoViewController.m in Sources */,
 				AA7247CB2244714F00E6B6C5 /* UnknowBoardView.m in Sources */,
 				AA6AB416224262B600C22D8C /* UILabel+Category.m in Sources */,
 				AAEB3D29224082F900887AA7 /* Student.m in Sources */,

@@ -17,9 +17,9 @@
 #endif
 
 // 打印主线程
-#define kPrintMainThread NSLog(@"主线程：%p", [NSThread mainThread]);
+#define kPrintMainThread NSLog(@"主线程：%@", [NSThread mainThread]);
 
 // 打印当前线程
-#define kPrintCurrentThread NSLog(@"当前线程：%p", [NSThread currentThread]);
+#define kPrintCurrentThread NSLog(@"当前线程：%@", [NSThread currentThread]);
 
 #endif /* CustomMacro_h */

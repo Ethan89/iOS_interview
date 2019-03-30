@@ -102,6 +102,11 @@ static NSString *const cellId = @"k_rootCellId";
                          @"subTitle": NSLocalizedString(@"DirtyRectangleOptimizeDesc", nil),
                          @"className": @"PaintingBoardViewController",
                          @"type": [NSNumber numberWithInteger:4]
+                         },
+                     @{
+                         @"title": NSLocalizedString(@"GCDDemo", nil),
+                         @"subTitle": NSLocalizedString(@"GCDDemoDesc", nil),
+                         @"className": @"GCDDemoViewController"
                          }
                      ];
     [self.dataSource addObjectsFromArray:tmp];

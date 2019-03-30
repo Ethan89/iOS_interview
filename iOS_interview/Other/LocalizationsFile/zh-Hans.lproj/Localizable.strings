@@ -34,6 +34,9 @@
 "DirtyRectangleOptimize" = "脏矩形优化";
 "DirtyRectangleOptimizeDesc" = "当一个视图被改动过了，它可能需要重绘。但是很多情况下，只是这个视图的一部分被改变了，所以重绘整个寄宿图就太浪费了。但是Core Animation通常并不了解你的自定义绘图代码，它也不能自己计算出脏区域的位置。然而，调用-setNeedsDisplayInRect:来标记脏区域位置。将影响到的矩形作为参数传入。这样就会在一次视图刷新时调用视图的-drawRect:方法。";
 
+"GCDDemo" = "GCD Demo";
+"GCDDemoDesc" = "GCD Demo";
+
 "AudioPlayer" = "音频播放";
 "AudioPlaterDesc" = "音频播放Demo";
 
